@@ -1,0 +1,60 @@
+.appContainer {
+  background: #fafafd;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #f1f2f3;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.01);
+}
+
+.sidebar {
+  background: #fff;
+  min-width: $sidebar-width;
+  width: $sidebar-width;
+  height: 100vh;
+  position: fixed;
+  margin-left: -$sidebar-width;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border: 1px solid #f1f2f3;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.01);
+  transition: all 0.4s;
+}
+
+.pageWrapper {
+  width: calc(100% - #{$sidebar-width});
+  margin-left: $sidebar-width;
+  transition: all 0.4s;
+}
+
+.pageContent {
+  margin-top: 30px;
+}
+
+.sidebar.open {
+  margin-left: 0;
+}
+
+.pageWrapper.full {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: 0;
+    z-index: 100;
+  }
+  .sidebar.open {
+    margin-left: -$sidebar-width;
+  }
+  .pageWrapper {
+    width: 100%;
+    margin: 0;
+  }
+}

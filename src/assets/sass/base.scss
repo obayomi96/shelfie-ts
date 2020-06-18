@@ -1,0 +1,52 @@
+$sidebar-width: 240px;
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 400;
+  src: url(../fonts/Graphik-Regular.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 500;
+  src: url(../fonts/Graphik-Medium.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 700;
+  src: url(../fonts/Graphik-Semibold.woff2);
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  background: #fafafd;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  color: #212121;
+  font-family: 'Graphik', system-ui, 'Helvetica';
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #070b1f;
+  font-family: 'Graphik';
+  font-weight: 600;
+  line-height: 1.2;
+}

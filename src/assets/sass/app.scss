@@ -1,0 +1,21 @@
+/* make the customizations */
+$theme-colors: (
+	'primary': #3b54ec,
+  // 'info': tomato,
+  // 'danger': teal,
+);
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+
+
+@import './base';
+@import './layout';
+@import './global';
+// @import './header';
+// @import './landing';
+// @import './utils';
+
+// Plugins
+@import './plugins/datepicker';
+// @import './plugins/preloader';
